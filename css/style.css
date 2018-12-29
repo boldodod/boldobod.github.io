@@ -30,6 +30,11 @@ h1 {
     background-color: rgb(19, 17, 17);
     width: 100%;
     padding: 20px;
+    position: fixed;
+    margin-top: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
 }
 
 header p{
@@ -51,7 +56,7 @@ header p{
     background:rgba(19, 17, 17, 0.7);
     padding: 40px;
     max-width:600px;
-    margin:40px auto;
+    margin:120px auto;
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54,29, 33, .3); 
     box-shadow: #fbd2d7; 
