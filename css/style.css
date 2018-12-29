@@ -105,11 +105,10 @@ input {
 }
 
 .field-wrap {
-    position:relative;
     margin-bottom:40px;
-    position: relative;
     min-width: 10%;
     color: #fbd2d7;
+
 }
 
 .button {
