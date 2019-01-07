@@ -1,5 +1,5 @@
 {
-  "name": "expapp",
+  "name": "questioner",
   "version": "1.0.0",
   "description": "API-endpoint",
   "main": "app.js",
@@ -32,5 +32,17 @@
   },
   "directories": {
     "test": "tests"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boldodod/boldodod.github.io.git"
+  },
+  "keywords": [
+    "meetups",
+    "questioner"
+  ],
+  "bugs": {
+    "url": "https://github.com/boldodod/boldodod.github.io/issues"
+  },
+  "homepage": "https://github.com/boldodod/boldodod.github.io#readme"
 }
