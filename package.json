@@ -1,0 +1,36 @@
+{
+  "name": "expapp",
+  "version": "1.0.0",
+  "description": "API-endpoint",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simeon",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "gulp": "^4.0.0",
+    "gulp-develop-server": "^0.5.0",
+    "gulp-jshint": "^2.1.0",
+    "jsdoc": "^3.4.0",
+    "mocha": "^5.2.0",
+    "should": "^7.1.1",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "growl": ">=1.10.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
