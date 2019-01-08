@@ -1,0 +1,32 @@
+{
+    "extends": "airbnb",
+
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+
+    "env": {
+        "node": true,
+        "browser": true,
+        "mocha":true
+    },
+
+    "rules": {
+        "comma-dangle": 0,
+        "linebreak-style":"off",
+        "import/no-unresolved": [
+            2, {"commonjs": true, "amd": true}
+        ],
+        "import/named": 2,
+        "import/namespace": 2,
+        "import/default": 2,
+        "import/export": 2
+    },
+
+        "plugins": [
+          "jsx-a11y",
+          "import"
+        ]
+}

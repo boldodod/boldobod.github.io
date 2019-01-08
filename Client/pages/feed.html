@@ -1,0 +1,143 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feed Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/feed.css" />
+    <!-- <script src=""></script> -->
+</head>
+
+<body class="container"> 
+
+    <header id="header">
+        <div class="first">
+            <h1>Andela UI Challenge</h1>
+            <p>by Obodozie Simeon</p>
+        </div>
+
+        <form id="search" action="/search" class="searchbar" autocomplete="off" role="search">
+            <div class="field-wrap">
+                <input name="search" type="text" placeholder="Search…" value="" autocomplete="off" maxlength="240" class="field-wrap f-input"/>
+            </div>
+        </form>
+        <button class="ask"><a href="#">Ask Question</a></li></button>
+    </header>
+
+    <aside class="side-bar">
+         <ul>
+            <li><h2><a href="./profile.html">profile</a></h2></li>
+            <li><h2><a class="present" href="./feed.html">feed</a></h2></li>
+            <li><h2><a href="./meetups.html">meet-ups</a></h2></li>
+            <li><h2><a href="#">past events</a></h2></li>
+            <li><h2><a href="#">archive</a></h2></li>
+        </ul>
+        <button class="logout"><a href="./signin.html">Log Out</a></button>
+    </aside>
+
+    <div class="all-articles">
+    
+        <article class="questions">
+
+            <img src="../img/pfimage.png" alt="name">
+
+            <div class="text">
+                <div class="name-date">
+                    <ul>
+                        <li><a href="#">John Doe</a></li>
+                        <li><a class="date" href="#">Dec. 21st 2018</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="question-topic">
+                    <h2>How do I learn to write code?</h2>
+                </div>
+
+                <div class="question-tags">
+                    <ul>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">ui</a></li>
+                    </ul>
+                </div>
+                <div class="vote">
+                    <ul>
+                        <li>
+                            <div><p>199</p>
+                                <a href="#">upvote</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>3</p>
+                                <a href="#">downvotes</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>47</p>
+                                <a href="#">comments</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p><a href="#">Andela fellowship 40 Bootcamp</a></p>
+            </div>
+        </article>
+
+        <article class="questions">
+
+            <img src="../img/pfimage.png" alt="name">
+
+            <div class="text">
+                <div class="name-date">
+                    <ul>
+                        <li><a href="#">John Doe</a></li>
+                        <li><a class="date" href="#">Dec. 21st 2018</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="question-topic">
+                    <h2>Adjust width of input field to its input?</h2>
+                </div>
+
+                <div class="question-tags">
+                    <ul>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">html</a></li>
+                    </ul>
+                </div>
+                <div class="vote">
+                    <ul>
+                        <li>
+                            <div><p>20</p>
+                                <a href="#">upvote</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>0</p>
+                                <a href="#">downvotes</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>3</p>
+                                <a href="#">comments</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p><a href="#">Andela Team Ace General Meeting</a></p>
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>

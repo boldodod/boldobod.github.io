@@ -1,0 +1,48 @@
+{
+  "name": "questioner",
+  "version": "1.0.0",
+  "description": "API-endpoint",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Simeon",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.12.3",
+    "gulp": "^4.0.0",
+    "gulp-develop-server": "^0.5.0",
+    "gulp-jshint": "^2.1.0",
+    "jsdoc": "^3.4.0",
+    "mocha": "^5.2.0",
+    "should": "^7.1.1",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.1",
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.12.1",
+    "growl": ">=1.10.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boldodod/boldodod.github.io.git"
+  },
+  "keywords": [
+    "meetups",
+    "questioner"
+  ],
+  "bugs": {
+    "url": "https://github.com/boldodod/boldodod.github.io/issues"
+  },
+  "homepage": "https://github.com/boldodod/boldodod.github.io#readme"
+}
