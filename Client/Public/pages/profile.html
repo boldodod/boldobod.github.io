@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Questions Page</title>
+    <title>Profile Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/profile.css" />
@@ -12,7 +12,8 @@
 
 <body class="container"> 
 
-    <header id="header">
+    <header id="header" class="head">
+        <nav > <a class="dot-nav" id="shownav" href="#" onclick="toggleDiv('sidebar')" ></a><nav>
         <div class="first">
             <h1>Andela UI Challenge</h1>
             <p>by Obodozie Simeon</p>
@@ -25,41 +26,48 @@
         </form>
     </header>
 
-    <aside class="side-bar">
-         <ul>
-            <li><h2><a class="present" href="./profile.html">profile</a></h2></li>
-            <li><h2><a href="./feed.html">feed</a></h2></li>
-            <li><h2><a href="./meetups.html">meet-ups</a></h2></li>
-            <li><h2><a href="#">past events</a></h2></li>
-            <li><h2><a href="#">archive</a></h2></li>
-        </ul>
-        <button class="logout"><a href="/index.html">Logout</a></button>
-    </aside>
+    <div class ="separator">
+        <div class="separator1">
+            <aside class="side-bar" id="sidebar">
+                <ul>
+                    <li><h2><a class="present" href="./profile.html">PROFILE</a></h2></li>
+                    <li><h2><a href="./feed.html">FEED</a></h2></li>
+                    <li><h2><a href="./meetups.html">MEET-UPS</a></h2></li>
+                    <li><h2><a href="#">HISTORY</a></h2></li>
+                    <li><h2><a href="#">ARCHIVE</a></h2></li>
+                </ul>
+                <button class="logout"><a href="./signin.htmla">Logout</a></button>
+            </aside>
+        </div>
 
-    <div class="summary">
-        <ul>
-            <li>
-                <div class="summary-box">
-                    <h1>45</h1>
-                    <p>Questions Asked</p>
-                </div>
-            </li>
+        <div class="summary">
+            <ul>
+                <li>
+                    <div class="summary-box">
+                        <h1>45</h1>
+                        <p>Questions Asked</p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="summary-box">
-                    <h1>102</h1>
-                    <p>Question Comments</p>
-                </div>
-            </li>
+                <li>
+                    <div class="summary-box">
+                        <h1>102</h1>
+                        <p>Question Comments</p>
+                    </div>
+                </li>
 
-            <li>
-                <div class="summary-box">
-                    <h1>18</h1>
-                    <p>Meet-Ups Attended</p>
-                </div>
-            </li>
+                <li>
+                    <div class="summary-box">
+                        <h1>18</h1>
+                        <p>Meet-Ups Attended</p>
+                    </div>
+                </li>
 
-        </ul>
+            </ul>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
 </body>
 </html>

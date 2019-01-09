@@ -12,7 +12,8 @@
 
 <body class="container"> 
 
-    <header id="header">
+    <header id="header" class="head">
+        <nav > <a class="dot-nav" id="shownav" href="#" onclick="toggleDiv('sidebar')" ></a><nav>
         <div class="first">
             <h1>Andela UI Challenge</h1>
             <p>by Obodozie Simeon</p>
@@ -24,19 +25,21 @@
             </div>
         </form>
     </header>
+    <div class ="separator">
+        <div class="separator1">
+            <aside id="sidebar" class="side-bar">
+                <ul>
+                    <li><h2><a href="./profile.html">PROFILE</a></h2></li>
+                    <li><h2><a href="./feed.html">FEED</a></h2></li>
+                    <li><h2><a class="present" href="./meetups.html">MEET-UPS</a></h2></li>
+                    <li><h2><a href="#">HISTORY </a></h2></li>
+                    <li><h2><a href="#">ARCHIVE</a></h2></li>
+                </ul>
+                <button class="logout"><a href="./signin.html">Logout</a></button>
+            </aside>
+        </div> 
 
-    <aside class="side-bar">
-         <ul>
-            <li><h2><a href="./profile.html">profile</a></h2></li>
-            <li><h2><a href="./feed.html">feed</a></h2></li>
-            <li><h2><a class="present" href="./meetups.html">meet-ups</a></h2></li>
-            <li><h2><a href="#">past events</a></h2></li>
-            <li><h2><a href="#">archive</a></h2></li>
-        </ul>
-        <button class="logout"><a href="/index.html">Logout</a></button>
-    </aside>
-
-    <div class="all-articles">
+        <div class="all-articles">
         <div class="topic">
             <button class="ask"><a href="#">Ask Question</a></li></button> 
             <p>Meet-Up</p>
@@ -167,6 +170,10 @@
                 </div>
                 </div>
         </article>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
 </body>
 </html>

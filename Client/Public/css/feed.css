@@ -13,6 +13,21 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.separator {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+}
+
+.separator1{
+    margin-top: 90px;
+}
+
+.separator2{
+   flex:1;
+}
+
 .container{
     background:rgba(rgb(211, 74, 33), green, blue, 80%);
     margin:0 auto;
@@ -22,6 +37,7 @@ body{
 
 #search{
     margin: 0;
+    width: 30%;
     padding-left: 0;
     margin-top: 5px;
     margin-left: 180px;
@@ -29,23 +45,23 @@ body{
 }
 
 .side-bar{
-    float: left;
+    /* float: left; */
     position: fixed;
     min-width: 15%;
     background: black;
-    height: 710px;
+    height: 100%;
     margin-top: 0px;
     /* overflow: hidden;
     position: relative; */
-    text-align: center;
+    text-align: right;
     margin-right: 50px;
     background-color: rgb(19, 17, 17);
-    box-shadow:0 4px 10px 4px rgba(54,29, 33, .3);
+    /* box-shadow:0 4px 10px 4px rgba(54,29, 33, .3); */
 }
 
 .side-bar ul{
     margin-top: 45px;
-    margin-right: 20px;
+    margin-right: 10px;
     line-height: 5em;
     text-align: right;
 }
@@ -53,6 +69,7 @@ body{
 aside .logout{
     border:1px solid rgb(172, 167, 167);
     outline:none;
+    margin-right: 10px;
     border-radius: 30px;
     padding:5px 10px;
     font-size:15px;
@@ -100,7 +117,6 @@ header h1{
     padding: 20px;
     position: fixed;
     margin-top: 0;
-    position: fixed;
     overflow: hidden;
     top: 0;
 }
@@ -244,7 +260,7 @@ a{
 article {
     background:rgba(19, 17, 17, 0.7);
     padding: 10px;
-    max-width:600px;
+    max-width:700px;
     margin:40px auto;
     /* margin-top: 140px; */
     border-radius:5px;
@@ -283,10 +299,9 @@ article img{
 
 .text{
     margin-top:0;
-    margin-right: 30px;
-    
+    margin-right: 20px;
     float: left;
-    min-width: 500px;
+    min-width: 200px;
     /* background-color: rgba(19, 17, 17, 0.7); */
     border-radius: 5px;
     padding: 10px;
@@ -304,6 +319,7 @@ article img{
 .question-tags li{
     border:1px solid rgb(172, 167, 167);
     outline:none;
+    margin-top: 5px;
     border-radius: 30px;
     padding:5px 10px;
     font-size:10px;
@@ -324,6 +340,7 @@ article{
 .date{
     font-size: .7em;
 }
+
 .vote{
     padding: 10px 10px 0 0;
 }
@@ -351,7 +368,8 @@ article{
 
 .ask {
     float: right; 
-    margin-right: 100px;
+    margin-right: 10%;
+    margin-left: 20px;
     background-color: #fbd2d7;
     border:1px solid rgb(172, 167, 167);
     outline:none;
@@ -383,6 +401,115 @@ article{
 }
 
 .questions{
-    margin-bottom: 0;
+    margin-bottom:0;
     margin-top:2px;
+
 }
+/* MEDIA QUERIES  */
+@media screen and (max-width: 1025px) {
+    .separator {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .dot-nav{
+        width: 40px;
+        height: 40px;
+        background: url(../img/icons8-menu-verticalw72h261.png) no-repeat 2% center;
+        margin-right: auto;
+        background-size: 8px;
+        float: left;
+        /* overflow: hidden; */
+    }
+
+    #sidebar{
+        visibility: hidden;
+    }
+
+    .questions{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #search{
+        visibility: hidden;
+    }
+
+   .first{
+       margin-right: auto;
+   }
+
+   article img{
+    width:30px;
+    height:30px;
+    float: left;
+    margin-bottom: 0;
+    overflow: hidden;
+   }
+   .ask{
+       /* margin-left: auto; */
+       float: left;
+       margin-right: auto;
+   }
+}
+
+/* MOBILES
+@media screen and (max-width: 480px) {
+    .separator {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .side-bar{
+        visibility: hidden;
+    }
+
+    .questions{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #search{
+        visibility: hidden;
+    }
+
+   .first{
+       margin-right: auto;
+   }
+
+   .ask{
+       margin-left: auto;
+       float: none;
+   }
+
+   article img{
+    max-width:30px;
+    max-height:30px;
+    float: left;
+    margin-bottom: 0;
+   }
+} */
