@@ -9,7 +9,6 @@ html, body {
 
 body{
     background-color: rgb(19, 17, 17);
-    /* background-image: url(../img/andaprepback.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,7 +16,6 @@ body{
 .separator {
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
 }
 
 .separator1{
@@ -44,18 +42,14 @@ body{
 }
 
 .side-bar{
-    /* float: left; */
     position: fixed;
     min-width: 15%;
     background: rgb(19, 17, 17);
     height: 100%;
     margin-top: 0;
-    /* overflow: hidden;
-    position: relative; */
     text-align: center;
     margin-right: 50px;
     background-color: rgb(19, 17, 17);
-    /* box-shadow:0 4px 10px 4px rgba(54,29, 33, .3); */
 }
 
 .side-bar ul{
@@ -79,7 +73,6 @@ aside .logout{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
 
 aside .logout:hover{
@@ -100,8 +93,6 @@ header h1{
     color:whitesmoke;
     margin: auto;
     padding: 0;
-    /* display:block;
-    float: left; */
 }
 
 header h1{
@@ -134,7 +125,6 @@ header p{
     max-width:600px;
     margin:40px auto;
     border-radius:5px;
-    /* box-shadow:0 4px 10px 4px rgba(54,29, 33, .3);  */
     box-shadow: #fbd2d7; 
 }
 
@@ -210,13 +200,11 @@ a{
     padding:5px 10px;
     font-size:18px;
     font-weight: medium;
-    /* letter-spacing:.1em; */
     text-align: center;
     background: none;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
   
 .button-block {
@@ -262,7 +250,6 @@ article {
     padding: 10px;
     max-width:600px;
     margin:40px auto;
-    /* margin-top: 140px; */
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
     color: white;
@@ -272,10 +259,6 @@ ul{
     padding-inline-start: 0;
     margin-top: 0;
 }
-
-/* .name-date a{
-    
-} */
 
 .name-date li{
     display: inline;
@@ -317,7 +300,6 @@ article img{
     font-style: oblique, bold;
     text-decoration: none;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
-  /* position: relative; */
 }
 
 .ask a{
@@ -350,7 +332,6 @@ article img{
     padding: 0;
     min-width:200px;
     margin:20px auto 40px auto;
-    /* margin-top: 140px; */
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
     color: white;
@@ -384,7 +365,7 @@ article img{
 }
 
 #add-meet{
-text-align: center
+    text-align: center
 }
 
 #add-meet h2{
@@ -430,7 +411,6 @@ text-align: center
         margin-right: auto;
         background-size: 8px;
         float: left;
-        /* overflow: hidden; */
     }
 
     #sidebar{

@@ -9,7 +9,6 @@ html, body {
 
 body{
     background-color: #fbd2d7;
-    /* background-image: url(../img/andaprepback.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,7 +16,6 @@ body{
 .separator {
     display: flex;
     flex-direction: row;
-    /* flex: 1; */
 }
 
 .separator1{
@@ -45,18 +43,14 @@ body{
 }
 
 .side-bar{
-    /* float: left; */
     position: fixed;
     min-width: 15%;
     background: black;
     height: 100%;
     margin-top: 0px;
-    /* overflow: hidden;
-    position: relative; */
     text-align: right;
     margin-right: 50px;
     background-color: rgb(19, 17, 17);
-    /* box-shadow:0 4px 10px 4px rgba(54,29, 33, .3); */
 }
 
 .side-bar ul{
@@ -80,7 +74,6 @@ aside .logout{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
 
 aside .logout:hover{
@@ -101,8 +94,6 @@ header h1{
     color:whitesmoke;
     margin: auto;
     padding: 0;
-    /* display:block;
-    float: left; */
 }
 
 header h1{
@@ -216,7 +207,6 @@ a{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
   
 .button-block {
@@ -262,7 +252,6 @@ article {
     padding: 10px;
     max-width:700px;
     margin:40px auto;
-    /* margin-top: 140px; */
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
     color: white;
@@ -272,10 +261,6 @@ ul{
     padding-inline-start: 0;
     margin-top: 0;
 }
-
-/* .name-date a{
-    
-} */
 
 .name-date li{
     display: inline;
@@ -302,7 +287,6 @@ article img{
     margin-right: 20px;
     float: left;
     min-width: 200px;
-    /* background-color: rgba(19, 17, 17, 0.7); */
     border-radius: 5px;
     padding: 10px;
 }
@@ -319,7 +303,6 @@ article img{
 .question-tags li{
     border:1px solid rgb(172, 167, 167);
     outline:none;
-    margin-top: 5px;
     border-radius: 30px;
     padding:5px 10px;
     font-size:10px;
@@ -384,7 +367,6 @@ article{
     font-style: oblique, bold;
     text-decoration: none;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
-  /* position: relative; */
 }
 
 .ask a{
@@ -420,7 +402,6 @@ article{
         margin-right: auto;
         background-size: 8px;
         float: left;
-        /* overflow: hidden; */
     }
 
     #sidebar{
@@ -459,57 +440,7 @@ article{
     overflow: hidden;
    }
    .ask{
-       /* margin-left: auto; */
        float: left;
        margin-right: auto;
    }
 }
-
-/* MOBILES
-@media screen and (max-width: 480px) {
-    .separator {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-
-    .side-bar{
-        visibility: hidden;
-    }
-
-    .questions{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 85%;
-    }
-
-    header{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    article{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #search{
-        visibility: hidden;
-    }
-
-   .first{
-       margin-right: auto;
-   }
-
-   .ask{
-       margin-left: auto;
-       float: none;
-   }
-
-   article img{
-    max-width:30px;
-    max-height:30px;
-    float: left;
-    margin-bottom: 0;
-   }
-} */
