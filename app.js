@@ -1,14 +1,35 @@
-const express = require('express');
+const express = require("express");
+
+const bodyParser = require("body-parser");
 
 const app = express();
 
-const bodyParser = require('body-parser');
 
+const meetupsRoutes = require("./Server/routes/meetups");
+const usersRoutes = require("./Server/routes/users");
+const questionsRoutes = require("./Server/routes/questions");  
+
+
+app.use(express.json());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', require('./Server/controllers'));
+app.use(meetupsRoutes);
+app.use(usersRoutes);
+app.use(questionsRoutes);
 
-// eslint-disable-next-line func-names
-app.listen('3000', () => {
-  console.log('server is listening');
+
+
+
+
+
+app.get("/", (req, res) => {
+    return res.json("Start with /user");
 });
+
+
+app.listen(3000, () => {
+    console.log("Server is listening on port 3000");
+});
+
+module.exports = app;
