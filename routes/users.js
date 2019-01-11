@@ -7,12 +7,12 @@ const  users = [];
 let id = 0;
 
 router.get("/api/v1/users", (req, res) => {
-    return res.json({users});
+    return res.json({users, status: 200, message: "User profile fectched"});
 });
 
 router.get("/api/v1/users/:id", (req, res) => {
     const user = users.find(val => val.id === Number(req.params.id));
-    return res.json({user});
+    return res.json({user, status: 200, message: "User Details DOWNLOADED successfully"});
 });
 
 router.post("/api/v1/users", (req, res) => {
@@ -26,19 +26,13 @@ router.post("/api/v1/users", (req, res) => {
         registered: Date.now(),
         admin:  req.body.admin,
     });
-    return res.json({message: "Created"});
-});
-
-router.patch("/api/v1/users", (req, res) => {
-    const user = users.find(val => val.id === Number(req.params.id));
-        user.firstname=  req.body.firstname;
-        return res.json({message: "Updated"});
+    return res.json({status: 200, message: "User has been successfully ADDED to List of users"});
 });
 
 router.delete("/api/v1/users/:id", (req, res) => {
     const userIndex = users.findIndex(val => val.id === Number(req.params.id));
     users.splice(userIndex, 1);
-    return res.json({message: "Deleted"});
+    return res.json({status: 202, message: "User has been DELETED from List of users"});
 });
 
 module.exports = router;
