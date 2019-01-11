@@ -8,11 +8,25 @@ html, body {
 }
 
 body{
-    background-color: rgb(19, 17, 17);
-    /* background-image: url(../img/andaprepback.jpg); */
+    background-color: #fbd2d7;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.separator {
+    display: flex;
+    flex-direction: row;
+}
+
+.separator1{
+    margin-top: 90px;
+}
+
+.separator2{
+   flex:1;
+}
+
+
 .container{
     background:rgba(rgb(211, 74, 33), green, blue, 80%);
     margin:0 auto;
@@ -29,18 +43,14 @@ body{
 }
 
 .side-bar{
-    float: left;
     position: fixed;
     min-width: 15%;
-    background: rgb(19, 17, 17);
-    height: 710px;
+    background: rgba(19, 17, 17, 0.9);;
+    height: 100%;
     margin-top: 0;
-    /* overflow: hidden;
-    position: relative; */
-    text-align: center;
+    text-align: right;
     margin-right: 50px;
     background-color: rgb(19, 17, 17);
-    box-shadow:0 4px 10px 4px rgba(54,29, 33, .3);
 }
 
 .side-bar ul{
@@ -53,6 +63,7 @@ body{
 aside .logout{
     border:1px solid rgb(172, 167, 167);
     outline:none;
+    margin-right: 10px;
     border-radius: 30px;
     padding:5px 10px;
     font-size:15px;
@@ -63,7 +74,6 @@ aside .logout{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
 
 aside .logout:hover{
@@ -84,8 +94,6 @@ header h1{
     color:whitesmoke;
     margin: auto;
     padding: 0;
-    /* display:block;
-    float: left; */
 }
 
 header h1{
@@ -114,28 +122,28 @@ header p{
 
 .form {
     background:rgba(19, 17, 17, 0.7);
-    padding: 0;
+    padding: 40px;
     max-width:600px;
     margin:40px auto;
     border-radius:5px;
-    /* box-shadow:0 4px 10px 4px rgba(54,29, 33, .3);  */
-    box-shadow: #fbd2d7; 
+    box-shadow:0 4px 10px 4px rgba(54,29, 33, .3);
+    font-size: .8rem; 
 }
 
-input{
-    color: rgba(5, 2, 2,.5);
-    font-size: 16px;
+input {
+    color:rgba(5, 2, 2,.5);
+    font-size:1em;
     display:block;
     padding:5px 10px;
     background:none;
     background-image:none;
-    border: 1px solid rgb(172, 167, 167);
+    border:1px solid rgb(172, 167, 167);
     color:white;
     border-radius:0;
     margin:auto;
     color:whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
-    width: 70%;
+    min-width: 50%;
 }
 
 .button a{
@@ -192,15 +200,14 @@ a{
     outline:none;
     border-radius: 30px;
     padding:5px 10px;
-    font-size:18px;
+    font-size:10px;
     font-weight: medium;
-    /* letter-spacing:.1em; */
+    letter-spacing:.1em;
     text-align: center;
     background: none;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
   
 .button-block {
@@ -246,7 +253,6 @@ article {
     padding: 10px;
     max-width:600px;
     margin:40px auto;
-    /* margin-top: 140px; */
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
     color: white;
@@ -257,10 +263,6 @@ ul{
     margin-top: 0;
 }
 
-/* .name-date a{
-    
-} */
-
 .name-date li{
     display: inline;
     color: whitesmoke;
@@ -268,8 +270,7 @@ ul{
     margin-left: 0;
     padding-left: 0;
     font-style: italic;
-    margin-right: 10px;
-    
+    margin-right: 10px; 
 }
 
 article img{
@@ -280,13 +281,59 @@ article img{
     border-radius: 70%;
 }
 
+.text{
+    margin-top:0;
+    margin-right: 20px;
+    float: left;
+    max-width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.question-tags li{
+    border:1px solid rgb(172, 167, 167);
+    outline:none;
+    border-radius: 30px;
+    padding:5px 10px;
+    font-size:10px;
+    font-weight: medium;
+    letter-spacing:.1em;
+    text-align: center;
+    background: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: inline; 
+}
+
+article{
+    overflow: hidden;
+}
+
+.date{
+    font-size: .7em;
+}
+.vote{
+    padding: 10px;
+}
+
+.vote li{
+    display: inline;
+    padding-right: 10px;
+}
+
+.vote li :hover{
+   color: #fbd2d7
+}
+
 .main-question p{
     line-height: 1.5em
 }
 
 .ask {
     float: right; 
-    margin-right: 100px;
+    margin-right: 10%;
+    margin-left: 20px;
     background-color: #fbd2d7;
     border:1px solid rgb(172, 167, 167);
     outline:none;
@@ -301,7 +348,6 @@ article img{
     font-style: oblique, bold;
     text-decoration: none;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
-  /* position: relative; */
 }
 
 .ask a{
@@ -317,12 +363,10 @@ article img{
     margin: 0 auto;
     margin-top: 90px;
     text-align: center;
-    max-width: 1080px;
-    
 }
 
 .summary li{
-    font-size:20px;
+    font-size:30px;
     font-weight: medium;
     letter-spacing:.1em;
     text-align: center;
@@ -332,9 +376,8 @@ article img{
     display: inline-block;
     background:rgba(19, 17, 17, 0.9);
     padding: 0;
-    min-width:200px;
-    margin:20px auto 40px auto;
-    /* margin-top: 140px; */
+    max-width:300px;
+    margin:75px auto 40px auto;
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
     color: white;
@@ -352,49 +395,61 @@ article img{
     margin-bottom: 0;
 }
 
-.field-wrap {
-    position:relative;
-    margin-bottom:15px;
-    min-width: 50%;
-    color: #fbd2d7;
-}
+/* MEDIA QUERIES  */
+@media screen and (max-width: 1310px) {
+    .separator {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
 
-::placeholder{
-    color: #fbd2d77c;
-}
+    .dot-nav{
+        width: 40px;
+        height: 40px;
+        background: url(../img/icons8-menu-verticalw72h261.png) no-repeat 2% center;
+        margin-right: auto;
+        background-size: 8px;
+        float: left;
+    }
 
-.describe textarea {
-    width: 70%;
-}
+    #sidebar{
+        visibility: hidden;
+    }
 
-#add-meet{
-text-align: center
-}
+    .questions{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+    }
 
-#add-meet h2{
-    color: #fbd2d7;
-}
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.add-delete{
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 5px;
-}
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.add-delete li{
-    display: inline-block;
-}
+    #search{
+        visibility: hidden;
+    }
 
-.add-delete li:hover{
-   color: black;
-}
+   .first{
+       margin-right: auto;
+   }
 
-.button:hover {
-    color: black;
+   .ask{
+       margin-left: auto;
+       float: none;
+   }
 
-}
-
-#create{
-    background-color: #fbd2d7;
-    color: black;
+   article img{
+    width:30px;
+    height:30px;
+    float: left;
+    margin-bottom: 0;
+    overflow: hidden;
+   }
 }

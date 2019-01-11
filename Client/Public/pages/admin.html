@@ -1,0 +1,130 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/admin.css" />
+</head>
+
+<body class="container"> 
+
+    <header id="header" class="head">
+        <nav > <a class="dot-nav" id="shownav" href="#" onclick="toggleDiv('sidebar')" ></a><nav>
+        <div class="first">
+            <h1>Andela UI Challenge</h1>
+            <p>by Obodozie Simeon</p>
+        </div>
+    </header>
+
+    <div class ="separator">
+        <div class="separator1">
+            <aside class="side-bar" id="sidebar">
+                <ul>
+                    <li><h2><a class="present" href="./admin.html">ADMIN</a></h2></li>
+                    <li><h2><a href="./feed.html">FEED</a></h2></li>
+                    <li><h2><a href="./meetups.html">MEET-UPS</a></h2></li>
+                    <li><h2><a href="">HISTORY</a></h2></li>
+                    <li><h2><a href="#">ARCHIVE</a></h2></li>
+                </ul>
+                <button class="logout"><a href="./signin.html">Log Out</a></button>
+            </aside>
+        </div>
+        
+        <div class="summary">
+            <ul>
+                <li>
+                    <div class="summary-box">
+                        <h1>215.3k</h1>
+                        <p>members</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="summary-box">
+                        <h1>11.5K</h1>
+                        <p>meet-ups</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="summary-box">
+                        <h1>1.1M</h1>
+                        <p>questions</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="summary-box">
+                        <h1>18.4M</h1>
+                        <p>comments</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="summary-box">
+                        <h1>418K</h1>
+                        <p>visitors</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="add-delete">
+            <ul>
+                <li>
+                    <span>
+                        <button id="create" class="button button-block">CREATE MEETUP</button>  
+                    </span>
+                </li>
+
+                <li>
+                    <span>
+                        <button class="button button-block">DELETE MEETUP</button>  
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <div class=main>
+                <div class="form">    
+                    <div class="tab-content">
+                            <div id="add-meet">   
+                                    <h2>Create Meet-up</h2>
+                                <form class="forms">      
+                                    <div class="field-wrap">
+                                        <input class="req" type="text" placeholder= "Title" required autocomplete="off" />
+                                    </div>
+                                
+                                    <div class="field-wrap">
+                                        <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date">
+                                    </div>
+
+                                    <div class="field-wrap">
+                                            <input placeholder="Time" class="textbox-n" type="text" onfocus="(this.type='time')"  id="date">
+                                    </div>
+                                    
+                                    <div class="describe">
+                                        <textarea rows="20" cols="20" class="expand" placeholder="Description"></textarea>
+                                    </div>
+                                    
+                                    <span>
+                                            <button class="button button-block">create</button>  
+                                    </span>
+                                </form>
+                    
+                            </div>
+                            
+                    </div>
+        
+                </div> 
+        
+        </div> 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+</body>
+</html>

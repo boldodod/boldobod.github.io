@@ -18,7 +18,9 @@ body{
 header h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:whitesmoke;
-    margin: auto;
+    margin: 0;
+    max-width: 50%;
+    font-size: 1.7em
 }
 
 h1 {
@@ -45,9 +47,8 @@ header p{
 }
 
 .main{
-    max-width: 700px;
-    min-width: 60%;
-    margin: auto;
+    min-width: 100%;
+    margin: center;
     text-align: center;
     color:whitesmoke;
 }
@@ -94,7 +95,8 @@ input {
 #tab {
     text-decoration:none;
     color:whitesmoke;
-    margin-right: 50px;
+    margin-top: 20px;
+    margin-right: 0;
     margin-bottom: 10px;
     position: relative;
     float: right;    
@@ -106,7 +108,7 @@ input {
 
 .field-wrap {
     margin-bottom:40px;
-    min-width: 10%;
+    min-width: 20%;
     color: #fbd2d7;
 
 }
@@ -137,13 +139,13 @@ input {
 
 .ask {
     float: right; 
-    margin-right: 100px;
+    margin-right: 10%;
     background-color: #fbd2d7;
     border:1px solid rgb(172, 167, 167);
     outline:none;
     border-radius: 30px;
     padding:5px 10px;
-    font-size:16px;
+    font-size: 1em;
     font-weight: medium;
     letter-spacing:.1em;
     text-align: center;
@@ -152,7 +154,6 @@ input {
     font-style: oblique, bold;
     text-decoration: none;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
-  /* position: relative; */
 }
 
 .ask a{

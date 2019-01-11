@@ -7,9 +7,22 @@ html, body {
     color: #fbd2d7;
 }
 
+.separator {
+    display: flex;
+    flex-direction: row;
+}
+
+.separator1{
+    margin-top: 90px;
+}
+
+.separator2{
+   flex:1;
+}
+
+
 body{
     background-color: #fbd2d7;
-    /* background-image: url(../img/andaprepback.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,23 +42,19 @@ body{
 }
 
 .side-bar{
-    float: left;
     position: fixed;
     min-width: 15%;
     background: black;
-    height: 710px;
+    height: 100%;
     margin-top: 0px;
-    /* overflow: hidden;
-    position: relative; */
     text-align: center;
     margin-right: 50px;
     background-color: rgb(19, 17, 17);
-    box-shadow:0 4px 10px 4px rgba(54,29, 33, .3);
 }
 
 .side-bar ul{
     margin-top: 45px;
-    margin-right: 20px;
+    margin-right: 10px;
     line-height: 5em;
     text-align: right;
 }
@@ -63,7 +72,6 @@ aside .logout{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
 
 aside .logout:hover{
@@ -84,8 +92,6 @@ header h1{
     color:whitesmoke;
     margin: auto;
     padding: 0;
-    /* display:block;
-    float: left; */
 }
 
 header h1{
@@ -100,7 +106,6 @@ header h1{
     padding: 20px;
     position: fixed;
     margin-top: 0;
-    position: fixed;
     overflow: hidden;
     top: 0;
 }
@@ -200,7 +205,6 @@ a{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    /* position: absolute; */
 }
   
 .button-block {
@@ -214,8 +218,8 @@ a{
 
 .topic {
     background:rgba(19, 17, 17, 0.7);
-    padding: 10px;
-    max-width:600px;
+    padding: 15px;
+    max-width:650px;
     margin:20px auto;
     margin-top: 90px;
     border-radius:5px;
@@ -246,7 +250,6 @@ article {
     padding: 10px;
     max-width:600px;
     margin:40px auto;
-    /* margin-top: 140px; */
     border-radius:5px;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
     color: white;
@@ -256,10 +259,6 @@ ul{
     padding-inline-start: 0;
     margin-top: 0;
 }
-
-/* .name-date a{
-    
-} */
 
 .name-date li{
     display: inline;
@@ -276,29 +275,17 @@ article img{
     max-width:50px;
     max-height:50px;
     float: left;
-    margin-bottom: 0;
-    margin-top: 5px;
+    margin-bottom: 260px;
     border-radius: 70%;
 }
 
 .text{
     margin-top:0;
     margin-right: 30px;
-    
-    float: left;
-    min-width: 500px;
-    /* background-color: rgba(19, 17, 17, 0.7); */
+    float: right;
+    max-width: 500px;
     border-radius: 5px;
     padding: 10px;
-}
-
-.text p{
-    color: #fbd2d7;
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: right;
 }
 
 .question-tags li{
@@ -324,6 +311,7 @@ article{
 .date{
     font-size: .7em;
 }
+
 .vote{
     padding: 10px 10px 0 0;
 }
@@ -351,7 +339,7 @@ article{
 
 .ask {
     float: right; 
-    margin-right: 100px;
+    margin-right: 10px;
     background-color: #fbd2d7;
     border:1px solid rgb(172, 167, 167);
     outline:none;
@@ -366,7 +354,6 @@ article{
     font-style: oblique, bold;
     text-decoration: none;
     box-shadow:0 4px 10px 4px rgba(54, 29, 33, 0.103);
-  /* position: relative; */
 }
 
 .ask a{
@@ -378,11 +365,66 @@ article{
     color: rgb(19, 17, 17);
 }
 
-.all-articles{
-    margin-top: 90px;
-}
-
 .questions{
     margin-bottom: 0;
     margin-top:2px;
+}
+
+/* MEDIA QUERIES  */
+@media screen and (max-width: 1025px) {
+    .separator {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .dot-nav{
+        width: 40px;
+        height: 40px;
+        background: url(../img/icons8-menu-verticalw72h261.png) no-repeat 2% center;
+        margin-right: auto;
+        background-size: 8px;
+        float: left;
+    }
+
+    #sidebar{
+        visibility: hidden;
+    }
+
+    .questions{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #search{
+        visibility: hidden;
+    }
+
+   .first{
+       margin-right: auto;
+   }
+
+   .ask{
+       margin-left: auto;
+       float: none;
+   }
+
+   article img{
+    width:30px;
+    height:30px;
+    float: left;
+    margin-bottom: 0;
+    overflow: hidden;
+   }
 }
