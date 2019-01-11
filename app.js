@@ -1,35 +1,20 @@
-const express = require("express");
-
-const bodyParser = require("body-parser");
+import express from 'express';
+import bodyParser from 'body-parser';
+import Routes from './Server/routes/index';
 
 const app = express();
 
-
-const meetupsRoutes = require("./Server/routes/meetups");
-const usersRoutes = require("./Server/routes/users");
-const questionsRoutes = require("./Server/routes/questions");  
-
-
-app.use(express.json());
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-app.use(meetupsRoutes);
-app.use(usersRoutes);
-app.use(questionsRoutes);
+app.use('/api/v1', Routes);
 
+app.get('/', (req, res) => res.json('Start with /user'));
 
-
-
-
-
-app.get("/", (req, res) => {
-    return res.json("Start with /user");
+app.use((req, res) => {
+  res.status(404).send('Not Found');
 });
-
 
 app.listen(3000, () => {
-    console.log("Server is listening on port 3000");
+  console.log('Server is listening on port 3000');
 });
-
-module.exports = app;
